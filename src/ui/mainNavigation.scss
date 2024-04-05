@@ -1,0 +1,48 @@
+@use '../styles/abstracts/variables' as *;
+
+.main-navigation {
+    position: relative;
+    width: 100%;
+    padding: 0.3125rem 2.125rem 0 2rem;
+    z-index: 5;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list-item {
+        width: 100%;
+        border-top: 0.0625rem solid var(--grayish-blue-alpha);
+        padding: 0.25rem;
+        font-size: 1.25rem;
+        text-align: center;
+        letter-spacing: 2px;
+
+        & > a {
+            display: inline-block;
+            width: 100%;
+            padding: 0.75rem 0 0.8125rem 0;
+            color: white;
+        }
+    }
+
+    &__login-link-container {
+        width: 100%;
+        padding: 1.5rem 0;
+        border-top: 0.0625rem solid var(--grayish-blue-alpha);
+        text-align: center;
+    }
+
+    &__login-link {
+        display: inline-block;
+        width: 100%;
+        padding: 0.375rem 0;
+        border: 0.125rem solid var(--white);
+        border-radius: $border-radius-small;
+        font-size: 1.25rem;
+        color: white;
+        letter-spacing: 2.75px;
+    }
+}
