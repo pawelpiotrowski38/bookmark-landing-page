@@ -1,0 +1,11 @@
+.socials-navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    & >:first-child {
+        margin-right: 2.5rem;
+    }
+}
