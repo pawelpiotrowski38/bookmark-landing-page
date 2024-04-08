@@ -1,0 +1,15 @@
+@use '../styles/abstracts/variables' as *;
+
+.link {
+    display: inline-block;
+    width: 100%;
+    line-height: 2.75rem;
+    border: 0.125rem solid;
+    border-radius: $border-radius-small;
+    box-shadow: 0 8px 10px -4px var(--grayish-blue-alpha);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-align: center;
+    transition: all $transition-time-fast ease-in-out;
+}
