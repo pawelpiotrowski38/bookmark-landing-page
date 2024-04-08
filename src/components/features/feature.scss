@@ -1,0 +1,51 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image-container {
+        position: relative;
+        margin-bottom: 4.75rem;
+    }
+
+    &__image {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__background-container {
+        position: absolute;
+        top: 2.1875rem;
+        right: 2.1875rem;
+        border-top-right-radius: 6.375rem;
+        border-bottom-right-radius: 6.375rem;
+        width: 100vw;
+        height: 12.6875rem;
+        background-color: var(--soft-blue);
+        z-index: 1;
+    }
+
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 0.5625rem;
+        font-size: 1.4375rem;
+    }
+
+    &__description {
+        margin-bottom: 1.25rem;
+        color: var(--grayish-blue);
+        font-size: 0.9375rem;
+        line-height: 1.65;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    &__link-container {
+        width: 7.125rem;
+    }
+}
