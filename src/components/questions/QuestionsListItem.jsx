@@ -1,4 +1,4 @@
-import ArrowIcon from '../../ui/ArrowIcon';
+import ArrowIcon from '../ui/ArrowIcon';
 import './questionsListItem.scss';
 
 export default function QuestionsListItem({ item, activeQuestionId, onHandleChangeActiveQuestionId }) {

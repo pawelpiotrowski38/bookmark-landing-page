@@ -1,4 +1,4 @@
-import Link from '../../ui/Link';
+import Link from '../ui/Link';
 import './downloadsListItem.scss';
 
 export default function DownloadsListItem({ item }) {

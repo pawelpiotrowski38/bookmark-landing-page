@@ -1,6 +1,6 @@
 import HomePage from './pages/HomePage';
-import Footer from './ui/Footer';
-import Header from './ui/Header';
+import Footer from './components/ui/Footer';
+import Header from './components/ui/Header';
 
 export default function App() {
 	return (

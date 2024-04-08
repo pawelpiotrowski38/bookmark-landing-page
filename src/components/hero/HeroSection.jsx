@@ -1,4 +1,4 @@
-import Link from '../../ui/Link';
+import Link from '../ui/Link';
 import './heroSection.scss';
 
 export default function HeroSection() {

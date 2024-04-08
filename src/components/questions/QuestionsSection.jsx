@@ -1,6 +1,6 @@
 
 import QuestionsList from './QuestionsList';
-import Link from '../../ui/Link';
+import Link from '../ui/Link';
 import './questionsSection.scss';
 
 export default function QuestionsSection() {
