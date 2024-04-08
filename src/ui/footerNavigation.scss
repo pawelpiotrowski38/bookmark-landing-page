@@ -1,0 +1,36 @@
+@use '../styles/abstracts/variables' as *;
+
+.footer-navigation {
+    width: 100%;
+    margin-top: 1.875rem;
+    margin-bottom: 2.375rem;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & >:not(:last-child) {
+            margin-bottom: 0.8125rem;
+        }
+    }
+
+    &__list-item {
+        font-size: 0.9375rem;
+        text-align: center;
+        letter-spacing: 1.75px;
+
+        & > a {
+            display: inline-block;
+            width: 100%;
+            padding: 0.375rem 0.5rem;
+            color: var(--gray);
+            transition: color $transition-time-fast ease-in-out;
+
+            &:hover {
+                color: var(--soft-red);
+                cursor: pointer;
+            }
+        }
+    }
+}
