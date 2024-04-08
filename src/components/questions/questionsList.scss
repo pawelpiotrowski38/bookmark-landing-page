@@ -1,0 +1,11 @@
+.questions-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.9375rem;
+
+    & >:first-child {
+        border-top: 0.0625rem solid var(--grayish-blue-alpha);
+    }
+}

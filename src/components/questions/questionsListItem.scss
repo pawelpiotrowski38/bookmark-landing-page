@@ -1,0 +1,46 @@
+@use '../../styles/abstracts/variables' as *;
+
+.questions-list-item {
+    width: 100%;
+    padding: 0.75rem 0 0.75rem 0;
+    border-bottom: 0.0625rem solid var(--grayish-blue-alpha);
+    font-size: 0.9375rem;
+    letter-spacing: 0px;
+
+    &__question-button {
+        width: 100%;
+        padding: 0.75rem 0 0.25rem 0;
+        transition: color $transition-time-fast ease-in-out;
+
+        &:hover {
+            color: var(--soft-red);
+            cursor: pointer;
+        }
+    }
+
+    &__arrow-icon {
+        transition: transform $transition-time-fast ease-in-out;
+        
+        &--active {
+            transform: rotate(-180deg);
+        
+            & svg path {
+                stroke: var(--soft-red);
+            }
+        }
+    }
+
+    &__question-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__question-answer {
+        margin-top: 1.625rem;
+        margin-bottom: 1rem;
+        color: var(--dark-gray);
+        letter-spacing: 0.1px;
+        line-height: 2;
+    }
+}
