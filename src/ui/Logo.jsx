@@ -1,12 +1,22 @@
-import './logo.scss';
+export default function Logo({ src, isOnTop }) {
+    const styles = {
+        zIndex: isOnTop ? 5 : 1,
+    }
 
-export default function Logo({ isState }) {
     return (
-        <a className='logo' href='/'>
+        <a
+            className='logo'
+            style={styles}
+            href='/'
+        >
             <img
-                src={`/images/${isState ? 'logo-bookmark-light.svg' : 'logo-bookmark.svg'}`}
+                src={src}
                 alt='Home of Bookmark'
             />
         </a>
     )
+}
+
+Logo.defaultProps = {
+    isOnTop: false,
 }

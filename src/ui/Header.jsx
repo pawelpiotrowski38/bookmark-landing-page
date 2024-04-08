@@ -2,9 +2,9 @@ import { useState } from 'react';
 import HamburgerButton from './HamburgerButton';
 import Logo from './Logo';
 import MainNavigation from './MainNavigation';
+import SocialsNavigation from './SocialsNavigation';
 import Mask from './Mask';
 import './header.scss';
-import SocialsNavigation from './SocialsNavigation';
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,7 +16,10 @@ export default function Header() {
     return (
         <header className='header'>
             <Mask isState={isMobileMenuOpen} />
-            <Logo isState={isMobileMenuOpen} />
+            <Logo
+                src={`${isMobileMenuOpen ? './images/logo-bookmark-light.svg' : '/images/logo-bookmark.svg'}`}
+                isOnTop={true}
+            />
             <HamburgerButton
                 isState={isMobileMenuOpen}
                 handleState={handleMobileMenuOpen}
@@ -24,7 +27,7 @@ export default function Header() {
             <div className={`header__nav-container ${isMobileMenuOpen ? 'header__nav-container--visible' : ''}`}>
                 <MainNavigation />
                 <div className='header__socials-nav-container'>
-                    <SocialsNavigation />
+                    <SocialsNavigation isOnTop={true} />
                 </div>
             </div>
         </header>
