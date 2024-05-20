@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import HamburgerButton from './HamburgerButton';
 import Logo from './Logo';
 import MainNavigation from './MainNavigation';
@@ -8,6 +8,20 @@ import './header.scss';
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 60 * 16) {
+                setIsMobileMenuOpen(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const handleMobileMenuOpen = function() {
         setIsMobileMenuOpen(!isMobileMenuOpen);
