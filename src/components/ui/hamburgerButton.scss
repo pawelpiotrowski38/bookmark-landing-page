@@ -6,3 +6,9 @@
         cursor: pointer;
     }
 }
+
+@media screen and (min-width: 60em) {
+    .hamburger-button {
+        display: none;
+    }
+}
